@@ -1,70 +1,132 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <title>Christmas Website</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                </a>
-            </nav>
-        </header>
+<html lang="en">
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Christmas Website</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="./assets/img/logo.png" alt="logo" class="nav__logo-img">
+                Christmas
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#celebrate" class="nav__link">Celebrate</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gift" class="nav__link">Gifts</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="./assets/img/nav-light.png" class="nav__img">
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="./assets/img/home.png" class="home__img">
+
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Merry Christmas and <br> Happy New Year!
+                    </h1>
+                    <p class="home__description">
+                        Christmas and a new year is about to begin,
+                        all good wishes and successes.
+                    </p>
+                    <a href="#" class="button">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="giving section container">
+            <h2 class="section__title">
+                Start Giving This <br> Christmas
+            </h2>
+
+            <div class="giving__container grid">
+                <div class="giving__content">
+                    <img src="./assets/img/giving1.png" class="giving__img">
+                    <h3 class="giving__title">Surprise gifts</h3>
+                    <p class="giving__description">They are the best gifts there is.</p>
+                </div>
+
+                <div class="giving__content">
+                    <img src="./assets/img/giving2.png" class="giving__img">
+                    <h3 class="giving__title">Ornaments</h3>
+                    <p class="giving__description">Give a moment to decorate.</p>
+                </div>
                 
-            </section>
+                <div class="giving__content">
+                    <img src="./assets/img/giving3.png" class="giving__img">
+                    <h3 class="giving__title">Lots of love</h3>
+                    <p class="giving__description">Give away feelings that last forever.</p>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== GIVING ====================-->
-            <section class="giving section container">
-                
-            </section>
+        <section class="celebrate section container" id="celebrate">
 
-            <!--==================== CELEBRATE ====================-->
-            <section class="celebrate section container" id="celebrate">
-                
-            </section>
+        </section>
 
-            <!--==================== GIFT ====================-->
-            <section class="gift section container" id="gift">
-                
-            </section>
+        <!--==================== GIFT ====================-->
+        <section class="gift section container" id="gift">
 
-            <!--==================== NEW ====================-->
-            <section class="new section container" id="new">
-                
-            </section>
+        </section>
 
-            <!--==================== MESSAGE ====================-->
-            <section class="message section container">
-                
-            </section>
-        </main>
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            
-        </footer>
+        </section>
 
-        <!--=============== SCROLL UP ===============-->
-        
+        <!--==================== MESSAGE ====================-->
+        <section class="message section container">
 
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src=""></script>
+        </section>
+    </main>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

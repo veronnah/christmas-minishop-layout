@@ -12,7 +12,7 @@
   --container-color: #fff;
 
   --body-font: 'Poppins', sans-serif;
-  
+
   --biggest-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -68,10 +68,13 @@ body {
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /*For animation dark mode*/
+  transition: .4s;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -94,14 +97,6 @@ button {
   border: none;
   outline: none;
 }
-
-/*=============== THEME ===============*/
-
-
-/*========== Variables Dark theme ==========*/
-
-
-
 
 .container {
   max-width: 968px;
@@ -127,29 +122,166 @@ button {
   text-align: center;
 }
 
-/*=============== HEADER ===============*/
+.header {
+  width: 100%;
+  background-color: var(--body-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
 
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/*=============== NAV ===============*/
+.nav__logo,
+.nav__close,
+.nav__toggle {
+  color: var(--title-color);
+}
 
+.nav__logo {
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-weight: var(--font-medium);
+}
 
-/* Show menu */
+.nav__logo-img {
+  width: 1.5rem;
+}
 
+.nav__toggle {
+  display: inline-flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
 
-/* Change background header */
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 4rem 0;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+    transition: .4s;
+  }
+}
 
+.nav__img {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-15deg);
+}
 
-/* Active link */
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
 
+.nav__link {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: .3s;
+}
 
-/*=============== HOME ===============*/
+.nav__link:hover {
+  color: var(--first-color);
+}
 
+.nav__close {
+  font-size: 2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
 
-/*=============== BUTTONS ===============*/
+.show-menu {
+  top: 0;
+}
 
+.scroll-header{
+  box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+}
 
-/*=============== GIVING ===============*/
+.home__container {
+  padding-top: 1.5rem;
+  row-gap: 1.5rem;
+}
 
+.home__img {
+  width: 320px;
+  justify-self: center;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  line-height: 140%;
+  margin-bottom: var(--mb-0-5);
+}
+
+.home__description {
+  font-size: var(--small-font-size);
+  padding: 0 2rem;
+  margin-bottom: var(--mb-2-5);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1.15rem 2.75rem;
+  font-weight: var(--font-medium);
+  border-radius: 3rem;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.giving__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 1.5rem;
+}
+
+.giving__content {
+  text-align: center;
+}
+
+.giving__img {
+  width: 100px;
+  transition: .3s;
+}
+
+.giving__img:hover {
+  transform: translateY(-.25rem);
+}
+
+.giving__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.giving__description {
+  font-size: var(--small-font-size);
+}
 
 /*=============== CELEBRATE ===============*/
 
