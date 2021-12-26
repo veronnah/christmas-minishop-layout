@@ -212,7 +212,7 @@ button {
   top: 0;
 }
 
-.scroll-header{
+.scroll-header {
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
 }
 
@@ -283,17 +283,132 @@ button {
   font-size: var(--small-font-size);
 }
 
-/*=============== CELEBRATE ===============*/
+.celebrate__container {
+  row-gap: 1rem;
+}
 
+.celebrate__data {
+  text-align: center;
+}
 
-/*=============== GIFT ===============*/
+.celebrate__title {
+  margin-bottom: var(--mb-1-5);
+}
 
+.celebrate__description {
+  margin-bottom: var(--mb-2-5);
+}
 
-/*=============== NEW ===============*/
+.celebrate__img {
+  width: 200px;
+  justify-self: center;
+}
 
+.gift__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
 
-/*Class Swiper*/
+.gift__card {
+  display: grid;
+  position: relative;
+  background-color: var(--container-color);
+  box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+  padding: 1.5rem 1rem 1rem;
+  border-radius: .75rem;
+}
 
+.gift__card:hover .gift__img {
+  transform: translateY(-.25rem);
+}
+
+.gift__img {
+  width: 100px;
+  justify-self: center;
+  margin-bottom: var(--mb-0-25);
+  transition: .3s;
+}
+
+.gift__icon {
+  font-size: 1.25rem;
+  color: var(--first-color);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.gift__price {
+  font-size: var(--h3-font-size);
+}
+
+.gift__title {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+}
+
+.new__card {
+  position: relative;
+  width: 230px;
+  background-color: var(--container-color);
+  box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+  padding: 1rem 1rem 1.5rem;
+  border-radius: .75rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.new__card:hover .new__img {
+  transform: translateY(-.5rem);
+}
+
+.new__overlay {
+  width: 250px;
+  height: 250px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -5rem;
+  left: -.65rem;
+  z-index: 0;
+}
+
+.new__img {
+  position: relative;
+  width: 150px;
+  margin-bottom: var(--mb-2);
+  transition: .3s;
+}
+
+.new__price {
+  font-size: var(--h2-font-size);
+}
+
+.new__title {
+  font-weight: var(--font-medium);
+}
+
+.new__button {
+  display: flex;
+  padding: .5rem;
+  border-radius: .25rem .25rem .25rem .25rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.new__icon {
+  font-size: 1.25rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--text-color);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
 
 /*=============== MESSAGE ===============*/
 
