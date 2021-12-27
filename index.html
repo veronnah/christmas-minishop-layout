@@ -21,7 +21,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#celebrate" class="nav__link">Celebrate</a>
@@ -41,9 +41,14 @@
                 <img src="./assets/img/nav-light.png" class="nav__img">
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-grid-alt'></i>
+            <div class="nav__btns">
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
             </div>
+
         </nav>
     </header>
 
@@ -157,7 +162,7 @@
         </section>
 
         <section class="new section container" id="new">
-            <h2 class="section__titile">
+            <h2 class="section__title">
                 New Gifts
             </h2>
 
@@ -199,7 +204,7 @@
                                 <i class='bx bx-heart new__icon'></i>
                             </button>
                         </article>
-                        
+
                         <article class="new__card swiper-slide">
                             <div class="new__overlay"></div>
 
@@ -224,16 +229,79 @@
                     <h2 class="message__title">
                         Send Good <br> Wishes!
                     </h2>
-                    <input type="email" placeholder="Write your message" class="message__imput">
+                    <input type="email" placeholder="Write your message" class="message__input">
+                    <button class="button message__button">Send Message</button>
                 </form>
+
+                <img src="./assets/img/message.png" class="message__img">
             </div>
         </section>
     </main>
 
-    <!--==================== FOOTER ====================-->
     <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="./assets/img/logo.png" class="footer__logo-img">
+                    Christmas
+                </a>
 
+                <p class="footer__description">
+                    This Christmas give <br> a lot of love
+                </p>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Our Services</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Discounts</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Shipping mode</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Support</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Support center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Available On</h3>
+
+                <div class="footer__aviables">
+                    <img src="./assets/img/aviable1.png" class="footer__aviable-img">
+                    <img src="./assets/img/aviable2.png" class="footer__aviable-img">
+                </div>
+            </div>
+
+            <img src="./assets/img/footer1.png" class="footer__img1">
+            <img src="./assets/img/footer2.png" class="footer__img2">
+        </div>
+
+        <span class="footer__copy">&#169; All rigths reserved</span>
     </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
 
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
