@@ -1,5 +1,5 @@
-# Responsive Christmas Website ⛄️
-https://veronnah.github.io/christmas-website-design/
+# Responsive Christmas Shop Website ⛄️
+https://veronnah.github.io/christmas-minishop-layout/
 
 - Responsive Christmas Website Using HTML CSS & JavaScript
 - Contains animations when scrolling.
